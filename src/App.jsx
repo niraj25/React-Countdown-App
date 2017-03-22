@@ -21,12 +21,12 @@ class App extends Component{
             <div className="App">
                 <div className="title"> Countdown to {this.state.deadline}</div>
                <Clock 
-                    deadline={this.state.deadline}/>
+                    deadline={this.state.deadline}/>                    
                 <Form inline>
-                    <FormControl className="deadlineInput" placeholder="Enter date"
-                    onChange={event=>this.setState({newDeadLine: event.target.value})}/>
+                   <input type="date" className="form-control"
+                   onChange={event=>this.setState({newDeadLine: event.target.value})}/>                 
                    
-                    <Button onClick={()=>this.changeDeadline()}>Submit</Button>
+                    <Button onClick={()=>this.changeDeadline()} className="btn btn-primary submitButton">Submit</Button>
                 </Form>
             </div>
         )

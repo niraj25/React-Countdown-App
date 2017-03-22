@@ -1,7 +1,14 @@
+html{
+   background-color: black; 
+}
 .App{
     text-align: center;
     font-size: 35px;
     margin-top:20%;
+    background-color: black;
+    color: #fff;
+    height: 100%;
+    
 }
 
 .title{
@@ -14,4 +21,8 @@
 .deadlineInput{
     font-size:25px;
     margin: 5px;
+}
+
+.submitButton{
+    margin-left: 5px;
 }
