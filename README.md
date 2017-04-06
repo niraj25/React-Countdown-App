@@ -3,10 +3,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 REACT COUNTDOWN APP
 
 Built Using
->ReactJS
->NodeJS
->Bootstrap
->Deployed on Microsoft Azure
+1.ReactJS
+2.NodeJS
+3.Bootstrap
+4.Deployed on Microsoft Azure
 
 
 Quick Start
