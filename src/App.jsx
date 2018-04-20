@@ -6,7 +6,7 @@ class App extends Component{
     constructor(props){
         super(props);
         this.state = {
-            deadline: 'January 07, 2018',
+            deadline: 'May 01, 2018',
             newDeadLine:''
         }
     }
@@ -19,15 +19,11 @@ class App extends Component{
     render(){
         return (
             <div className="App">
+                <img src="https://media.giphy.com/media/26xBIGFMLSK3OqnKg/giphy.gif"/>
                 <div className="title"> Countdown to {this.state.deadline}</div>
                <Clock 
                     deadline={this.state.deadline}/>                    
-                <Form inline>
-                   <input type="date" className="form-control"
-                   onChange={event=>this.setState({newDeadLine: event.target.value})}/>                 
-                   
-                    <Button onClick={()=>this.changeDeadline()} className="btn btn-primary submitButton">Submit</Button>
-                </Form>
+                
             </div>
         )
     }
